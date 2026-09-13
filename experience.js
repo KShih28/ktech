@@ -47,7 +47,7 @@ const lifeContent = {
  travel: ['THE NEXT PLACE','Take the memories home.','New streets, unexpected stops, and the little details. Capture what catches your eye and use supported translation when you need a little help.','assets/city.webp','Illustrative sunlit city street and café','Meet your travel companion'],
  hiking: ['THE GREAT OUTDOORS','Be here. Keep this.','The climb, the quiet, that first glimpse of the summit. Save your perspective without stopping to pull out your phone.','assets/highlands.webp','Illustrative mountain ridge trail at sunrise','Explore APEX for the outdoors'],
  cycling: ['THE WEEKEND RIDE','Remember the whole journey.','The café stop, the scenic detour, and the friends who came along. Capture the moments around your ride. Set up your glasses before moving and keep your attention on the road.','assets/city.webp','Illustrative bicycle parked beside a city café','Discover hands-free capture'],
- everyday: ['THE LITTLE MOMENTS','Make ordinary memorable.','A new idea. A favourite song. An unexpected view. Bring capture, calls and connected assistance into your everyday routine.','assets/apex-studio.webp','APEX smart glasses on a studio surface','Find your everyday pair']
+ everyday: ['THE LITTLE MOMENTS','Make ordinary memorable.','A new idea. A favourite song. An unexpected view. Bring capture, calls and connected assistance into your everyday routine.','assets/apex-no-logo-studio.webp','APEX smart glasses on a studio surface','Find your everyday pair']
 };
 tabs('[data-life]', button => {
  const item = lifeContent[button.dataset.life];
@@ -69,3 +69,11 @@ if(modelSelect){
  });
  update();
 }
+
+document.querySelectorAll('[data-order-model]').forEach(link => {
+ link.addEventListener('click', () => {
+  if (!modelSelect) return;
+  modelSelect.value = link.dataset.orderModel;
+  modelSelect.dispatchEvent(new Event('change'));
+ });
+});
