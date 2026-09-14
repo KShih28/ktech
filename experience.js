@@ -82,6 +82,7 @@ document.querySelectorAll('[data-hardware]').forEach(control => {
     if (button) featureTabs.select(button, true);
   });
 });
+if (featureTabs.buttons.length) featureTabs.select(featureTabs.buttons[0]);
 document.querySelector('.feature-explorer')?.classList.add('initialized');
 
 const lifeContent = {
@@ -111,6 +112,7 @@ function showLifeFailure(request, item) {
 
 function showLifeLoaded(request, item) {
   if (request !== lifeRequest || !isCurrentLifeResource(item)) return;
+  lifeImage.alt = item[5];
   lifeMedia.classList.remove('loading', 'failed');
   lifeLoading.hidden = true;
   lifeError.hidden = true;
