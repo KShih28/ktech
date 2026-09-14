@@ -17,7 +17,7 @@ const features = [
   ],
   [
     "Capture your perspective",
-    "Six-axis stabilised photos and video, noise-reduction recording and first-person live-streaming support.",
+    "Six-axis stabilized photos and video, noise-reduction recording and first-person live-streaming support.",
   ],
   [
     "Stay connected",
@@ -34,8 +34,8 @@ const groups = [
   [
     "Camera & audio",
     [
-      ["Camera", "Samsung 13 MP front camera"],
-      ["Stabilisation", "Six-axis G-sensor; anti-shake photos and video"],
+      ["Camera", "13 MP front camera"],
+      ["Stabilization", "Six-axis G-sensor; anti-shake photos and video"],
       [
         "Microphones",
         "3 microphones; ANC/ENC dual-microphone noise-reduction support",
