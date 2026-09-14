@@ -26,7 +26,7 @@
       >
     </div>
     <header>
-      <a class="logo" href="index.html" aria-label="KTECH home">KTECH</a
+      <a class="logo site-brand" href="index.html" aria-label="KTECH home"><img src="assets/ktech-header-logo.webp" alt="KTECH — Future Within Reach" /></a
       ><button
         class="menu-toggle"
         aria-controls="main-nav"
@@ -38,103 +38,132 @@
         <a href="index.html#models">Products</a
         ><a href="compare.html">Compare</a><a href="about.html">About KTECH</a
         ><a href="guide.html">Support</a
+        ><a href="tutorials.html">Tutorials</a
         ><a class="button nav-contact" href="index.html#preorder">Preorder</a>
       </nav>
     </header>
     <main id="main">
       <section class="about-hero">
-        <p class="eyebrow">OUR COMPANY</p>
-        <h1>Find what’s next.<br />Bring it closer.</h1>
-        <p class="intro">
-          A modern consumer technology brand built around discovery,
-          accessibility, and usefulness.
-        </p>
+        <div class="about-hero-copy">
+          <p class="eyebrow">A CLEARER VIEW</p>
+          <h1>Look closer at<br /><em>what’s next.</em></h1>
+          <p class="intro">
+            Before technology earns a place in your day, it should make sense.
+            KTECH makes the new and unfamiliar easier to explore.
+          </p>
+          <a class="button" href="index.html#models">See what we’re exploring <span aria-hidden="true">↗</span></a>
+        </div>
+        <figure class="about-hero-media">
+          <img
+            src="assets/about-hero-rooftop.png"
+            alt="Person wearing smart glasses looking over a city from a rooftop garden at dusk"
+          />
+        </figure>
       </section>
-      <section class="company-intro">
-        <p class="eyebrow">OUR BACKGROUND</p>
+      <section class="company-intro about-reveal">
+        <p class="eyebrow">WHAT “WITHIN REACH” MEANS</p>
         <div>
-          <h2>Technology made closer.</h2>
+          <h2>Technology should feel useful before it feels futuristic.</h2>
           <p>
-            KTECH focuses on innovative hardware that can change how people
-            compute, communicate, work, create, and experience the world. From
-            compact PCs to smart glasses and intelligent wearables, we make
-            emerging technology easier to discover, understand, and use.
+            KTECH makes unfamiliar hardware easier to discover, understand,
+            and choose. We focus on technology that earns a place in everyday
+            life—whether you are creating, connecting, working, or simply
+            staying present in the moment.
           </p>
           <p>
-            Our ambition is to become a trusted destination for the next
-            generation of devices. We focus on products with a clear purpose,
-            strong value, and meaningful real-world use.
+            The goal is simple: bring a clearer view of what is next, with the
+            information you need to decide whether it is right for you.
           </p>
+        </div>
+      </section>
+      <section class="value-explorer about-reveal" aria-labelledby="values-title">
+        <div class="heading">
+          <div>
+            <p class="eyebrow">WHAT WE BRING CLOSER</p>
+            <h2 id="values-title">A better reason to look closer.</h2>
+          </div>
+          <p>Follow the ideas that shape how we choose what belongs in your day.</p>
+        </div>
+        <div class="about-explorer-layout">
+          <div class="about-explorer-media">
+            <img id="value-image" src="assets/editorial-coast.webp" alt="Illustrative coastline viewed from a quiet vantage point" />
+            <p class="media-caption" id="value-caption">A clearer perspective starts with the real world.</p>
+          </div>
+          <div class="about-explorer-copy">
+            <div class="about-tabs" role="tablist" aria-label="KTECH values">
+              <button id="value-useful" type="button" role="tab" aria-selected="true" aria-controls="value-panel" data-value="useful">Useful first</button>
+              <button id="value-clear" type="button" role="tab" aria-selected="false" aria-controls="value-panel" tabindex="-1" data-value="clear">Clear by design</button>
+              <button id="value-present" type="button" role="tab" aria-selected="false" aria-controls="value-panel" tabindex="-1" data-value="present">Made for the moment</button>
+            </div>
+            <div id="value-panel" class="about-panel" role="tabpanel" aria-labelledby="value-useful">
+              <span id="value-index">01 / 03</span>
+              <h3 id="value-title">Technology with a reason to be in your day.</h3>
+              <p id="value-copy">We look for meaningful capabilities, practical value, and the small details that make a device worth reaching for.</p>
+              <p class="about-detail" id="value-detail">The future is more useful when it fits naturally into the life you already have.</p>
+            </div>
+          </div>
         </div>
       </section>
       <section id="direction" class="direction">
-        <p class="eyebrow">PURPOSE & DIRECTION</p>
-        <h2>Future Within Reach.</h2>
+        <p class="eyebrow">OUR PROMISE</p>
+        <h2>Curious about what’s next.<br />Clear about what matters.</h2>
         <div class="about-grid">
           <article>
-            <p class="eyebrow">OUR MISSION</p>
-            <h3>Make emerging technology accessible and useful.</h3>
+            <p class="eyebrow">WHAT WE BRING CLOSER</p>
+            <h3>Technology with a reason to be in your day.</h3>
             <p>
-              To make the world’s most exciting emerging technology accessible,
-              understandable, and useful to more people.
+              We look for meaningful capabilities, practical value, and the
+              small details that make a device worth reaching for.
             </p>
           </article>
           <article>
-            <p class="eyebrow">OUR VISION</p>
-            <h3>Become the trusted place to discover what’s next.</h3>
+            <p class="eyebrow">HOW WE SHOW UP</p>
+            <h3>Clear information for a confident choice.</h3>
             <p>
-              To become a trusted destination for discovering and experiencing
-              the technology of tomorrow.
+              We explain what is confirmed, what each product is best for, and
+              where a little more context helps you decide.
             </p>
           </article>
         </div>
       </section>
-      <section>
+      <section class="choice-explorer about-reveal" aria-labelledby="choice-title">
         <div class="heading">
-          <p class="eyebrow">OUR APPROACH</p>
-          <h2>From discovery to everyday use.</h2>
+          <div>
+            <p class="eyebrow">HOW WE CHOOSE</p>
+            <h2 id="choice-title">Only the technology worth bringing closer.</h2>
+          </div>
+          <p>Three questions keep the signal clear.</p>
         </div>
-        <div class="three process">
-          <article>
-            <span>01</span>
-            <h3>Discover</h3>
-            <p>
-              We look for new devices and categories that represent where
-              technology is heading.
-            </p>
-          </article>
-          <article>
-            <span>02</span>
-            <h3>Curate</h3>
-            <p>
-              We focus on clear purpose, strong value, and practical real-world
-              uses.
-            </p>
-          </article>
-          <article>
-            <span>03</span>
-            <h3>Bring closer</h3>
-            <p>
-              We make unfamiliar technology easier to understand, compare, and
-              adopt.
-            </p>
-          </article>
+        <div class="choice-layout">
+          <div class="choice-tabs" role="tablist" aria-label="How KTECH chooses technology">
+            <button id="choice-everyday" type="button" role="tab" aria-selected="true" aria-controls="choice-panel" data-choice="everyday"><span>01</span>Useful in everyday life</button>
+            <button id="choice-value" type="button" role="tab" aria-selected="false" aria-controls="choice-panel" tabindex="-1" data-choice="value"><span>02</span>Clear value</button>
+            <button id="choice-simple" type="button" role="tab" aria-selected="false" aria-controls="choice-panel" tabindex="-1" data-choice="simple"><span>03</span>Easy to understand</button>
+          </div>
+          <div class="choice-media">
+            <img id="choice-image" src="assets/lifestyle-everyday.webp" alt="Illustrative everyday city scene" />
+            <div id="choice-panel" role="tabpanel" aria-labelledby="choice-everyday">
+              <p class="eyebrow" id="choice-label">THE EVERYDAY TEST</p>
+              <h3 id="choice-heading">Where does it make the day better?</h3>
+              <p id="choice-copy">We look for a clear moment where a device can make life easier, richer, or more connected.</p>
+            </div>
+          </div>
         </div>
       </section>
       <section class="principles">
-        <p class="eyebrow">WHAT DRIVES US</p>
-        <h2>Four principles.<br />One clear direction.</h2>
+        <p class="eyebrow">OUR STANDARD</p>
+        <h2>Less noise.<br />Better decisions.</h2>
         <article>
           <h3>Curiosity</h3>
           <p>
-            Keep exploring new categories, new uses, and smarter ways to live
+            Stay open to new categories, new uses, and smarter ways to live
             and work.
           </p>
         </article>
         <article>
           <h3>Accessibility</h3>
           <p>
-            Make advanced technology approachable, even when it is unfamiliar.
+            Make unfamiliar technology feel approachable from the first look.
           </p>
         </article>
         <article>
@@ -147,43 +176,45 @@
         <article>
           <h3>Trust</h3>
           <p>
-            Explain technology clearly so people can make informed decisions.
+            Explain technology plainly so people can make informed decisions.
           </p>
         </article>
       </section>
-      <section>
-        <p class="eyebrow">OUR FOCUS</p>
-        <h2>A wider view of technology.</h2>
+      <section class="category-explorer about-reveal" aria-labelledby="category-title">
+        <p class="eyebrow">WHAT WE’RE EXPLORING</p>
+        <h2 id="category-title">Smart glasses first.<br />More to discover next.</h2>
         <p class="intro">
-          Our company direction spans four areas. Explore the smart glasses
-          collection available on this website today.
+          Smart glasses are the focus of this site today. We are also watching
+          the categories that could make everyday technology feel more useful.
         </p>
-        <div class="focus-grid">
-          <article>
-            <h3>Mini PCs</h3>
-            <p>Compact performance for modern work.</p>
-          </article>
-          <article>
-            <h3>Smart glasses</h3>
-            <p>Capture, communication, and connected assistance.</p>
-          </article>
-          <article>
-            <h3>Wearables</h3>
-            <p>Technology that moves with you.</p>
-          </article>
-          <article>
-            <h3>Emerging tech</h3>
-            <p>New hardware with a practical purpose.</p>
-          </article>
+        <div class="category-layout">
+          <div class="category-tabs" role="tablist" aria-label="Technology categories KTECH is exploring">
+            <button id="category-glasses" type="button" role="tab" aria-selected="true" aria-controls="category-panel" data-category="glasses"><span>AVAILABLE NOW</span>Smart glasses</button>
+            <button id="category-computing" type="button" role="tab" aria-selected="false" aria-controls="category-panel" tabindex="-1" data-category="computing"><span>EXPLORING</span>Compact computing</button>
+            <button id="category-wearables" type="button" role="tab" aria-selected="false" aria-controls="category-panel" tabindex="-1" data-category="wearables"><span>EXPLORING</span>Wearables</button>
+            <button id="category-hardware" type="button" role="tab" aria-selected="false" aria-controls="category-panel" tabindex="-1" data-category="hardware"><span>EXPLORING</span>Emerging hardware</button>
+          </div>
+          <div class="category-media">
+            <img id="category-image" src="assets/about-smart-glasses.png" alt="Person wearing smart glasses at a city café" width="1536" height="1024" loading="lazy" decoding="async" />
+            <div id="category-panel" role="tabpanel" aria-labelledby="category-glasses">
+              <p class="focus-status" id="category-status">AVAILABLE NOW</p>
+              <h3 id="category-heading">Smart glasses</h3>
+              <p id="category-copy">Capture, connection, and an easier way to stay present.</p>
+              <a class="link" id="category-link" href="apex.html">Explore APEX <span aria-hidden="true">↗</span></a>
+            </div>
+          </div>
         </div>
-        <a class="button" href="index.html#models">Explore smart glasses</a>
+        <a class="button" href="apex.html">Explore APEX <span aria-hidden="true">↗</span></a>
       </section>
       <section class="purpose-band">
         <p class="eyebrow">LET’S CONNECT</p>
-        <h2>Discover what fits<br />your everyday.</h2>
-        <a class="button" href="https://www.instagram.com/ktech_electronics/"
-          >Talk to KTECH ↗</a
-        >
+        <h2>Find what fits<br />your everyday.</h2>
+        <div class="purpose-actions">
+          <a class="button" href="apex.html">Explore APEX <span aria-hidden="true">↗</span></a>
+          <a class="button outline" href="https://www.instagram.com/ktech_electronics/"
+            >Message KTECH <span aria-hidden="true">↗</span></a
+          >
+        </div>
       </section>
     </main>
     <footer class="business-footer">
@@ -201,10 +232,12 @@
       <div>
         <b>Here to help</b><a href="about.html">About KTECH</a
         ><a href="guide.html">English setup guide</a
+        ><a href="tutorials.html">Video tutorials</a
         ><a href="index.html#faq">Common questions</a
         ><a href="https://www.instagram.com/ktech_electronics/"
           >Message us on Instagram</a
         >
+        <a href="https://web.facebook.com/profile.php?id=61593806242796">Follow us on Facebook</a>
       </div>
       <small>© 2026 KTECH. Future Within Reach.</small>
     </footer>

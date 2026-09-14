@@ -26,7 +26,7 @@
       >
     </div>
     <header>
-      <a class="logo" href="index.html" aria-label="KTECH home">KTECH</a
+      <a class="logo site-brand" href="index.html" aria-label="KTECH home"><img src="assets/ktech-header-logo.webp" alt="KTECH — Future Within Reach" /></a
       ><button
         class="menu-toggle"
         aria-controls="main-nav"
@@ -38,6 +38,7 @@
         <a href="index.html#models">Products</a
         ><a href="compare.html">Compare</a><a href="about.html">About KTECH</a
         ><a href="guide.html">Support</a
+        ><a href="tutorials.html">Tutorials</a
         ><a class="button nav-contact" href="index.html#preorder">Preorder</a>
       </nav>
     </header>
@@ -109,15 +110,60 @@
           </tbody>
         </table>
         <p class="note">
-          APEX specifications follow the supplied manufacturer sheet. The source
-          uses Gb for memory; equivalent capacity in GB has not been confirmed.
           Battery endurance varies with usage. AI and app functions vary by
           software and region.
         </p>
       </section>
-      <section id="specs">
-        <p class="eyebrow">LOOK A LITTLE CLOSER</p>
-        <h2>The details behind APEX.</h2>
+      <section class="recording-proof" id="recording" aria-labelledby="recording-title">
+        <div class="recording-copy">
+          <p class="eyebrow">MAKE THE MOMENT LAST</p>
+          <h2 id="recording-title">More room to keep the story going.</h2>
+          <p>
+            APEX records up to 10 minutes in one take—so a walk, a performance
+            or the beginning of a trip does not have to end mid-moment.
+          </p>
+        </div>
+        <div class="recording-metrics" aria-label="Video recording time comparison">
+          <div class="recording-apex">
+            <span>UP TO</span><strong>10:00</strong><b>APEX per recording</b>
+          </div>
+          <div class="recording-reference">
+            <span>REFERENCE</span><strong>03:00</strong><b>Short-form clip length</b>
+          </div>
+        </div>
+        <div class="recording-playground" aria-labelledby="recording-playground-title">
+          <div>
+            <p class="eyebrow" id="recording-playground-title">TRY THE TIMELINE</p>
+            <label for="recording-range">Choose the length of the moment you want to keep</label>
+            <output id="recording-output" for="recording-range">01:00</output>
+            <input
+              aria-describedby="recording-feedback"
+              id="recording-range"
+              max="10"
+              min="1"
+              step="1"
+              type="range"
+              value="1"
+            />
+            <p id="recording-feedback">
+              One minute of your moment, with room to keep going.
+            </p>
+          </div>
+          <div class="recording-timeline" aria-hidden="true">
+            <span class="recording-fill" id="recording-fill"></span>
+            <span class="recording-reference-marker"><b>03:00</b> reference</span>
+            <span class="recording-end-marker"><b>10:00</b> APEX maximum</span>
+          </div>
+        </div>
+        <p class="recording-note">
+          Up to 10 minutes per recording. The 3-minute figure is an unnamed
+          reference point for context; recording limits and actual results vary
+          by settings, storage and conditions.
+        </p>
+      </section>
+      <!-- <section id="specs">
+        <p class="eyebrow">LOOK A LITTLE CLOSER</p> -->
+        <!-- ''<h2>The details behind APEX.</h2>
         <details class="spec-group" open>
           <summary>Camera & audio</summary>
           <table>
@@ -304,8 +350,8 @@
               </tr>
             </tbody>
           </table>
-        </details>
-      </section>
+        </details>'' -->
+      <!-- </section> -->
       <section class="package-section" id="package">
         <div class="package-visual">
           <img
@@ -430,11 +476,13 @@
       <div>
         <b>Here to help</b><a href="about.html">About KTECH</a
         ><a href="guide.html">English setup guide</a
+        ><a href="tutorials.html">Video tutorials</a
         ><a href="index.html#faq">Common questions</a>
 
         <a href="https://www.instagram.com/ktech_electronics/"
           >Message us on Instagram</a
         >
+        <a href="https://web.facebook.com/profile.php?id=61593806242796">Follow us on Facebook</a>
       </div>
       <small>© 2026 KTECH. Future Within Reach.</small>
     </footer>

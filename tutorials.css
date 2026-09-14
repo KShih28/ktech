@@ -1,0 +1,73 @@
+.tutorials {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 80px 6% 100px;
+}
+.tutorials > section {
+  padding: 0;
+}
+.tutorial-intro {
+  max-width: 760px;
+  margin-bottom: 64px;
+}
+.tutorial-intro h1 {
+  margin: 18px 0 24px;
+}
+.tutorial-intro .intro {
+  color: var(--muted);
+  max-width: 600px;
+  margin-bottom: 24px;
+}
+.tutorial-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 28px;
+}
+.tutorial-card {
+  min-width: 0;
+  overflow: hidden;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+}
+.tutorial-heading {
+  padding: 24px;
+  min-height: 130px;
+}
+.tutorial-heading h2 {
+  margin-top: 10px;
+  font-size: clamp(22px, 2.3vw, 28px);
+  line-height: 1.25;
+  letter-spacing: -0.035em;
+}
+.tutorial-card video {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: contain;
+  background: #080d14;
+}
+.tutorial-card video:focus-visible {
+  outline: 3px solid var(--blue);
+  outline-offset: -3px;
+}
+.tutorial-source {
+  display: inline-block;
+  padding: 18px 24px;
+  font-size: 14px;
+  color: var(--blue);
+}
+.tutorial-sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+@media (max-width: 760px) {
+  .tutorials { padding-top: 44px; padding-bottom: 60px; }
+  .tutorial-intro { margin-bottom: 36px; }
+  .tutorial-grid { grid-template-columns: 1fr; gap: 24px; }
+  .tutorial-heading { min-height: auto; padding: 20px; }
+}

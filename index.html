@@ -23,10 +23,10 @@
       href="assets/favicon.png?v=20260914-logo"
     />
   </head>
-  <body class="home">
+  <body class="home home-v1">
     <a class="skip" href="#main">Skip to content</a>
     <header>
-      <a aria-label="KTECH home" class="logo" href="index.html">KTECH</a
+      <a aria-label="KTECH home" class="logo v1-brand" href="index.html"><img src="assets/ktech-header-logo.webp" alt="KTECH — Future Within Reach" /></a
       ><button
         aria-controls="main-nav"
         aria-expanded="false"
@@ -38,12 +38,16 @@
         <a href="index.html#models">Products</a
         ><a href="compare.html">Compare</a><a href="about.html">About KTECH</a
         ><a href="guide.html">Support</a
+        ><a href="tutorials.html">Tutorials</a
         ><a class="button nav-contact" href="index.html#preorder">Preorder</a>
       </nav>
     </header>
     <main id="main">
       <section class="experience-hero">
+        <span aria-hidden="true" class="hero-orbit hero-orbit-one"></span>
+        <span aria-hidden="true" class="hero-orbit hero-orbit-two"></span>
         <div class="hero-copy">
+          <p class="hero-kicker">APEX / FIRST BATCH 2026</p>
           <h1>Stay in the moment.<br /><em>Capture everything.</em></h1>
           <p class="intro">
             Meet APEX. Hands-free capture, connected AI and open-ear audio in
@@ -63,9 +67,14 @@
                 >
                   <path d="M5 12h14M12 5l7 7-7 7"></path></svg></span></a
             ><a class="button outline" href="#features"
-              >Discover the features</a
+            >Discover the features</a
             >
           </div>
+          <a class="hero-reservation" href="#preorder">
+            <span class="hero-reservation-dot" aria-hidden="true"></span>
+            <span><b>First-batch offer</b><small>Reserve APEX with 50% down</small></span>
+            <strong>₱5,995 <span aria-hidden="true">↗</span></strong>
+          </a>
         </div>
         <figure class="hero-product">
           <img
@@ -211,14 +220,39 @@
           <div><b>Touch + buttons</b><span>Frame controls</span></div>
         </div>
       </section>
+      <section class="editorial-moment" id="moment" aria-labelledby="moment-title">
+        <img
+          alt="Illustrative blue-hour city rooftop scene"
+          class="moment-backdrop"
+          height="864"
+          loading="lazy"
+          src="assets/editorial-rooftop.webp"
+          width="1536"
+        />
+        <div class="moment-shade" aria-hidden="true"></div>
+        <div class="moment-copy">
+          <p class="eyebrow">A NEW PERSPECTIVE</p>
+          <h2 id="moment-title">More of the world.<br /><em>Less of the screen.</em></h2>
+          <p>
+            Be in the conversation, keep your phone away, and save the details
+            that make the moment yours.
+          </p>
+          <a class="button outline" href="apex.html">Meet APEX <span aria-hidden="true">↗</span></a>
+        </div>
+        <p class="moment-note">Illustrative lifestyle imagery. Not captured with APEX.</p>
+      </section>
       <section class="lifestyle" id="lifestyle">
         <div class="heading">
           <div>
-            <p class="eyebrow">APEX IN YOUR DAY</p>
-            <h2>Made for your <em>everyday.</em></h2>
+            <p class="eyebrow">FIND YOUR APEX MOMENT</p>
+            <h2>What do you want to <em>keep close?</em></h2>
           </div>
+          <p>
+            Choose a moment. We’ll show the part of the APEX experience that
+            is most relevant to it.
+          </p>
         </div>
-        <div aria-label="Everyday scenarios" class="life-tabs" role="tablist">
+        <div aria-label="Choose an everyday moment" class="life-tabs" role="tablist">
           <button
             aria-controls="life-panel"
             aria-selected="true"
@@ -245,6 +279,16 @@
             tabindex="-1"
           >
             Everyday
+          </button
+          ><button
+            aria-controls="life-panel"
+            aria-selected="false"
+            data-life="night"
+            id="life-tab-night"
+            role="tab"
+            tabindex="-1"
+          >
+            Night out
           </button>
         </div>
         <div
@@ -290,6 +334,9 @@
               Capture the places and details you want to remember, with
               supported connected translation when you need it.
             </p>
+            <p class="life-benefit" id="life-benefit">
+              Best for: saving the details you want to remember.
+            </p>
             <a class="button" href="apex.html">Explore APEX for travel</a>
           </div>
         </div>
@@ -310,6 +357,7 @@
         <div class="collection-layout">
           <div class="models">
             <article class="model flagship">
+              <p class="model-best-for"><span aria-hidden="true">✦</span> Best for capturing more</p>
               <p class="eyebrow">Flagship AI smart glasses</p>
               <h3>APEX</h3>
               <a class="photo" href="apex.html"
@@ -333,6 +381,7 @@
               >
             </article>
             <article class="model">
+              <p class="model-best-for"><span aria-hidden="true">◌</span> Best for everyday AI</p>
               <a class="photo" href="nova.html"
                 ><img
                   alt="Black KTECH NOVA glasses and packaging"
@@ -357,6 +406,7 @@
               >
             </article>
             <article class="model">
+              <p class="model-best-for"><span aria-hidden="true">⌁</span> Best for music & calls</p>
               <a class="photo" href="neo.html"
                 ><img
                   alt="Black KTECH NEO glasses and packaging"
@@ -543,6 +593,24 @@
           </details>
         </div>
       </section>
+      <section class="confidence-band" aria-label="Preorder details">
+        <div>
+          <span aria-hidden="true">◷</span>
+          <p><b>First batch</b><small>Offer ends 30 September</small></p>
+        </div>
+        <div>
+          <span aria-hidden="true">½</span>
+          <p><b>50% to reserve</b><small>Balance before delivery</small></p>
+        </div>
+        <div>
+          <span aria-hidden="true">↘</span>
+          <p><b>Arriving around 14 October</b><small>Individual delivery confirmed by KTECH</small></p>
+        </div>
+        <div>
+          <span aria-hidden="true">◎</span>
+          <p><b>Questions before you reserve?</b><small>Message KTECH on Instagram</small></p>
+        </div>
+      </section>
       <section class="preorder-section" id="preorder">
         <div class="preorder-copy">
           <p class="eyebrow">FIRST BATCH / SEPTEMBER 2026</p>
@@ -582,8 +650,15 @@
             <option value="NOVA">NOVA — AI camera smart glasses</option>
             <option value="NEO">NEO — smart audio glasses</option>
           </select>
+          <label for="order-quantity">Number of pairs</label
+          ><select id="order-quantity">
+            <option value="1">1 pair</option>
+            <option value="2">2 pairs</option>
+            <option value="3">3 pairs</option>
+            <option value="4">4 pairs</option>
+          </select>
           <div class="reservation-total">
-            <span>Price per pair</span><strong id="order-total">₱5,995</strong>
+            <span>Total for your order</span><strong id="order-total">₱5,995</strong>
           </div>
           <dl>
             <div>
@@ -599,6 +674,14 @@
             Delivery charges are confirmed separately. Your reservation is
             confirmed by KTECH after payment verification.
           </p>
+          <button class="reward-entry" id="open-reward" type="button">
+            <span class="reward-entry-mark" aria-hidden="true">✦</span>
+            <span><b>Deal Your KTech Reward</b><small>Reveal a preorder voucher to screenshot</small></span>
+            <span aria-hidden="true">→</span>
+          </button>
+          <p class="reward-terms">
+            <b>1 reward voucher = 1 AI Glasses unit.</b> You may submit up to one voucher screenshot for each pair ordered. Multiple vouchers cannot be combined for one unit. Gamified discounts do not apply to an order that already has a promotion or promotional price. Send your screenshot to KTECH on Instagram before payment confirmation. Rewards are pre-order only, non-cash, non-transferable, and subject to KTECH verification.
+          </p>
           <button class="button copy-order" id="copy-order">
             Copy my preorder message
           </button>
@@ -608,12 +691,46 @@
             href="https://www.instagram.com/ktech_electronics/"
             >Message KTECH on Instagram <span aria-hidden="true">↗</span></a
           >
+          <p class="reservation-contact">
+            Prefer email or phone? <a href="mailto:ktech.electronics.sales@gmail.com">ktech.electronics.sales@gmail.com</a><br />
+            <a href="tel:+639177745858">0917 774 5858</a><br />
+            <a href="https://web.facebook.com/profile.php?id=61593806242796">Follow KTECH on Facebook</a>
+          </p>
           <p class="reservation-foot">
             APEX promotional price valid until 30 September 2026.
           </p>
         </div>
       </section>
     </main>
+    <div class="reward-modal" id="reward-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="reward-title">
+      <div class="reward-backdrop" data-close-reward></div>
+      <section class="reward-panel">
+        <button class="reward-close" data-close-reward type="button" aria-label="Close reward game">×</button>
+        <div class="reward-grid" aria-hidden="true"></div>
+        <div class="reward-heading">
+          <span class="reward-signal">✦</span>
+          <p>FIRST-BATCH PREORDER</p>
+          <h2 id="reward-title">Deal Your KTech Reward</h2>
+          <p class="reward-instruction" id="reward-instruction">Choose one card to reveal your preorder reward.</p>
+        </div>
+        <div class="reward-cards" id="reward-cards" aria-label="Choose a reward card">
+          <button class="reward-card" type="button" aria-label="Reveal reward card 1"><span class="card-face card-back"><i>K</i><small>KTECH</small></span><span class="card-face card-front"></span></button>
+          <button class="reward-card" type="button" aria-label="Reveal reward card 2"><span class="card-face card-back"><i>K</i><small>KTECH</small></span><span class="card-face card-front"></span></button>
+          <button class="reward-card" type="button" aria-label="Reveal reward card 3"><span class="card-face card-back"><i>K</i><small>KTECH</small></span><span class="card-face card-front"></span></button>
+          <button class="reward-card" type="button" aria-label="Reveal reward card 4"><span class="card-face card-back"><i>K</i><small>KTECH</small></span><span class="card-face card-front"></span></button>
+        </div>
+        <div class="reward-voucher" id="reward-voucher" hidden aria-live="polite">
+          <p class="voucher-label" id="voucher-label">YOUR PREORDER REWARD</p>
+          <strong id="voucher-value">₱100 OFF</strong>
+          <p>Valid for <b>1 KTECH AI Glasses unit</b></p>
+          <div class="voucher-reference"><span>CLAIM REFERENCE</span><b id="voucher-reference">KT-00000</b><time id="voucher-date"></time></div>
+          <p class="voucher-help">Screenshot this reward and send it to KTECH on Instagram before payment confirmation.</p>
+          <button class="reward-replay" id="reward-replay" type="button">Deal again</button>
+        </div>
+        <div class="reward-burst" id="reward-burst" aria-hidden="true"></div>
+        <p class="reward-rule">One reward voucher may be used for each AI Glasses unit ordered. Vouchers cannot be applied on top of an existing promotion or promotional price.</p>
+      </section>
+    </div>
     <footer class="business-footer">
       <div>
         <a class="logo" href="index.html">KTECH</a>
@@ -629,10 +746,12 @@
       <div>
         <b>Here to help</b><a href="about.html">About KTECH</a
         ><a href="guide.html">English setup guide</a
+        ><a href="tutorials.html">Video tutorials</a
         ><a href="index.html#faq">Common questions</a
         ><a href="https://www.instagram.com/ktech_electronics/"
           >Message us on Instagram</a
         >
+        <a href="https://web.facebook.com/profile.php?id=61593806242796">Follow us on Facebook</a>
       </div>
       <small>© 2026 KTECH. Future Within Reach.</small>
     </footer>
