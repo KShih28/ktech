@@ -76,7 +76,7 @@ const updateOrder = () => {
 orderModel?.addEventListener("change", updateOrder); orderQuantity?.addEventListener("change", updateOrder); updateOrder();
 document.getElementById("v2-copy")?.addEventListener("click", async () => {
   const quantity = Number(orderQuantity.value); const total = prices[orderModel.value] * quantity; const pair = quantity === 1 ? "pair" : "pairs";
-  const message = `Hi KTECH! I’d like to preorder ${quantity} ${pair} of ${orderModel.value} for ${price(total, false)}. Please confirm availability, payment details, included accessories, warranty terms and delivery fees. I understand the 50% down payment is ${price(total / 2)}, with the balance due before delivery.`;
+  const message = `Hi KTECH! I’d like to pre-order ${quantity} ${pair} of ${orderModel.value} for ${price(total, false)}. Please confirm availability, payment details, included accessories, warranty terms and delivery fees. I understand the 50% down payment is ${price(total / 2)}, with the balance due before delivery.`;
   const status = document.getElementById("v2-copy-status");
   try { await navigator.clipboard.writeText(message); status.textContent = "Copied. Open Instagram and paste your message."; } catch { status.textContent = message; }
 });

@@ -293,7 +293,7 @@ if (modelSelect) {
     const quantity = Number(quantitySelect?.value || 1);
     const total = prices[modelSelect.value] * quantity;
     const pairLabel = quantity === 1 ? "pair" : "pairs";
-    const message = `Hi KTECH! I’d like to preorder ${quantity} ${pairLabel} of ${modelSelect.value} for ${peso(total)}. Please confirm availability, payment details, included accessories, warranty terms and delivery fees. I understand the 50% down payment is ${peso(total / 2)}, with the balance due before delivery. I will send up to ${quantity} Deal Your KTech Reward screenshot${quantity === 1 ? "" : "s"} — one voucher may be used for each unit ordered.`;
+    const message = `Hi KTECH! I’d like to pre-order ${quantity} ${pairLabel} of ${modelSelect.value} for ${peso(total)}. Please confirm availability, payment details, included accessories, warranty terms and delivery fees. I understand the 50% down payment is ${peso(total / 2)}, with the balance due before delivery. I will send up to ${quantity} Deal Your KTech Reward screenshot${quantity === 1 ? "" : "s"} — one voucher may be used for each unit ordered.`;
     const status = document.getElementById("copy-status");
     try {
       await navigator.clipboard.writeText(message);
